@@ -1,1 +1,142 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Culinary Artisan's Gourmet | Kalyani Nagar & Wadgaon Sheri, Pune</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #c5a059;
+            --primary-dark: #a3813c;
+            --dark: #1a1a1a;
+            --light: #fdfbf7;
+            --accent: #2c2c2c;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        .live-ticker { background-color: #111; color: var(--primary); padding: 10px 15px; font-size: 0.9rem; border-bottom: 2px solid var(--primary); white-space: nowrap; overflow: hidden; position: relative; }
+        .live-ticker span { display: inline-block; padding-left: 100%; animation: ticker 25s linear infinite; }
+        @keyframes ticker { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-100%, 0, 0); } }
+        header { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; color: #fff; text-align: center; padding: 50px 20px; border-bottom: 4px solid var(--primary); }
+        .brand-logo { width: 130px; height: 130px; border-radius: 50%; border: 3px solid var(--primary); object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--primary); margin-bottom: 5px; letter-spacing: 1px; }
+        .tagline { font-size: 1rem; font-weight: 300; margin-bottom: 15px; color: #ddd; }
+        .location-badge { display: inline-block; background: var(--primary); color: #000; padding: 8px 20px; font-weight: 600; border-radius: 30px; margin-bottom: 20px; font-size: 0.95rem; }
+        .header-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; font-size: 0.95rem; font-weight: 600; text-decoration: none; border-radius: 50px; transition: all 0.3s ease; }
+        .btn-whatsapp { background-color: #25d366; color: white; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
+        .btn-map { background-color: #ea4335; color: white; box-shadow: 0 4px 15px rgba(234, 67, 53, 0.4); }
+        .banner-container { max-width: 800px; margin: 30px auto; padding: 0 20px; text-align: center; }
+        .banner-img { width: 100%; border-radius: 10px; border: 2px solid var(--primary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 15px; }
+        .daily-special-box { background: #fff; border-left: 5px solid var(--primary); border-right: 5px solid var(--primary); margin: 20px auto; max-width: 1100px; padding: 25px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.06); }
+        .daily-special-box h3 { font-family: 'Playfair Display', serif; color: var(--accent); font-size: 1.4rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .daily-special-box h3 i { color: var(--primary); }
+        .daily-special-content { font-size: 1rem; color: #444; line-height: 1.7; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
+        h2.section-title { font-family: 'Playfair Display', serif; text-align: center; font-size: 2rem; margin-bottom: 35px; color: var(--accent); position: relative; }
+        h2.section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--primary); margin: 10px auto 0; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .menu-card { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); transition: transform 0.3s ease; }
+        .menu-card h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .menu-card h3 i { color: var(--primary); }
+        .menu-card p { color: #666; font-size: 0.95rem; }
+        .home-cooking-banner { background: linear-gradient(135deg, #2c2c2c, #1a1a1a); color: white; padding: 35px; border-radius: 12px; margin-top: 40px; text-align: center; border: 2px solid var(--primary); }
+        .home-cooking-banner h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; color: var(--primary); margin-bottom: 15px; }
+        .home-cooking-banner p { font-size: 1rem; margin-bottom: 20px; color: #ddd; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .contact-section { background-color: var(--accent); color: white; text-align: center; padding: 45px 20px; margin-top: 40px; }
+        .contact-section h2 { font-family: 'Playfair Display', serif; color: var(--primary); margin-bottom: 15px; }
+        .contact-phone { font-size: 1.7rem; font-weight: 700; color: #fff; margin: 15px 0; display: inline-block; text-decoration: none; }
+        .social-links { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+        .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; background: rgba(255,255,255,0.1); color: white; border-radius: 50%; font-size: 1.1rem; text-decoration: none; transition: background 0.3s; }
+        .social-icon.instagram:hover { background: #e1306c; }
+        .social-icon.facebook:hover { background: #1877f2; }
+        .social-icon.whatsapp:hover { background: #25d366; }
+        footer { text-align: center; padding: 20px; background: #111; color: #888; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="live-ticker">
+        <span id="ticker-text">🌟 जय महाराष्ट्र! | कल्याणी नगर व वडगांव शेरी, पुणे में शुद्ध और स्वादिष्ट होम कुकिंग एवं कैटरिंग सेवाएं उपलब्ध 📞 +91 95849 05365</span>
+    </div>
+
+    <header>
+        <img src="https://i.ibb.co/3ykS5Wc9/50784.png" alt="The Culinary Artisan's Gourmet Logo" class="brand-logo">
+        <div class="logo-text">THE CULINARY ARTISAN'S GOURMET</div>
+        <div class="tagline">Handcrafted Flavors for Your Daily Table & Divine Events</div>
+        <div class="location-badge"><i class="fa-solid fa-location-dot"></i> Kalyani Nagar & Wadgaon Sheri, Pune</div>
+        <div class="header-buttons">
+            <a href="https://wa.me/919584905365?text=Hello,%20I%20want%20to%20know%20more%20about%20your%20catering%20services." class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Chat</a>
+            <a href="https://maps.google.com/?q=Kalyani+Nagar+and+Wadgaon+Sheri+Pune" class="btn btn-map" target="_blank"><i class="fa-solid fa-map-location-dot"></i> Google Map Location</a>
+        </div>
+    </header>
+
+    <div class="banner-container">
+        <img src="https://i.ibb.co/6R2qCgW3/a9c48692-2218-4fcc-b804-a3ed1b681750-1_all_11838.png" alt="Special Menu Banner" class="banner-img">
+        <img src="https://i.ibb.co/6c24g10Q/50901.jpg" alt="New Uploaded Banner" class="banner-img">
+    </div>
+
+    <div class="container" style="padding-top: 0;">
+        <div class="daily-special-box">
+            <h3><i class="fa-solid fa-star-of-life"></i> आज का विशेष अपडेट (Pune Specials)</h3>
+            <div class="daily-special-content" id="daily-content">
+                <p><strong>विशेष संदेश:</strong> कल्याणी नगर और वडगांव शेरी, पुणे में आपके परिवार की सेहत के लिए शुद्ध सामग्री और बेहतरीन स्वाद के साथ होम कुकिंग और पार्टी ऑर्डर्स बुक करें।</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Our Special Menu & Services</h2>
+        <div class="menu-grid">
+            <div class="menu-card"><h3><i class="fa-solid fa-mug-hot"></i> Delicious Breakfast</h3><p>Upma, Sandwich, Palak Moong Daal Chilla, and fresh daily breakfast packages.</p></div>
+            <div class="menu-card"><h3><i class="fa-solid fa-utensils"></i> South Indian</h3><p>Crispy Dosa, soft Idli, and authentic traditional South Indian delicacies.</p></div>
+            <div class="menu-card"><h3><i class="fa-solid fa-bowl-food"></i> Street Food</h3><p>Tasty and hygienic Pav Bhaji and other popular street food specialties.</p></div>
+            <div class="menu-card"><h3><i class="fa-solid fa-plate-wheat"></i> Chinese</h3><p>Noodles, Manchurian, Chowmein, Momos, and delicious Fried Rice.</p></div>
+            <div class="menu-card"><h3><i class="fa-solid fa-burger"></i> Finger Food</h3><p>Assorted Sandwiches, Rolls, and snacks perfect for events and gatherings.</p></div>
+        </div>
+
+        <div class="home-cooking-banner">
+            <h3><i class="fa-solid fa-house-chimney"></i> Home Cooking & Daily Meal Service</h3>
+            <p>Looking for hygienic, delicious homemade food or daily meal packages delivered to your table? Get in touch with us for customized home cooking options in Kalyani Nagar & Wadgaon Sheri, Pune.</p>
+            <a href="tel:+919584905365" class="btn btn-whatsapp"><i class="fa-solid fa-phone"></i> Enquire for Home Cooking</a>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>For Consultation & Bookings</h2>
+        <p>Get in touch with us for daily breakfast packages, divine events, and party orders in Pune.</p>
+        <a href="tel:+919584905365" class="contact-phone"><i class="fa-solid fa-phone"></i> +91 95849 05365</a>
+        <div style="margin-top: 15px; font-size: 0.95rem; color: #ccc;"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> Locations: Kalyani Nagar & Wadgaon Sheri, Pune, Maharashtra</div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/culinaryartisan_chef_pune" class="social-icon instagram" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1LVUc93cPE/" class="social-icon facebook" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/919584905365" class="social-icon whatsapp" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 The Culinary Artisan's Gourmet. All Rights Reserved. Pune, Maharashtra.</p>
+    </footer>
+
+    <script>
+        const today = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const dateString = today.toLocaleDateString('hi-IN', options);
+        const updatesList = [
+            `<strong>दिनांक:</strong> ${dateString} | <strong>विशेष संदेश:</strong> 'जय महाराष्ट्र!' हमारे यहाँ शुद्ध और स्वादिष्ट होम कुकिंग, डेली ब्रेकफास्ट और पार्टी केटरिंग के लिए आज ही संपर्क करें।`,
+            `<strong>पुणे अपडेट:</strong> कल्याणी नगर और वडगांव शेरी में आपके हर उत्सव के लिए खास खान-पान की व्यवस्था।`
+        ];
+        let currentIndex = 0;
+        function rotateUpdates() {
+            const contentBox = document.getElementById('daily-content');
+            if(contentBox) {
+                contentBox.innerHTML = `<p>${updatesList[currentIndex]}</p>`;
+                currentIndex = (currentIndex + 1) % updatesList.length;
+            }
+        }
+        setInterval(rotateUpdates, 6000);
+    </script>
+</body>
+</html>
